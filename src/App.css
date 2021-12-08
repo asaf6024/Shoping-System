@@ -20,6 +20,7 @@ ul.react-tabs__tab-list {
   .container {
     margin-top: 80px;
     padding: 0 !important;
+    width: 85% !important;
   }
   .container h4 {
     font-size: medium !important;
@@ -28,17 +29,19 @@ ul.react-tabs__tab-list {
     font-size: small !important;
   }
   .buttonDiv {
+    left: 0 !important;
     width: 100%;
     height: 60px;
     background: black;
     position: fixed;
     top: 0;
     z-index: 2;
+    display: flex;
   }
-  .buttonDiv .saveButton,
-  .buttonDiv .sendButton {
+  .buttonDiv .saveButton {
     color: white;
     background-color: blue;
+    border-radius: 10px;
   }
   .buttonDiv .saveButton {
     right: 0 !important;

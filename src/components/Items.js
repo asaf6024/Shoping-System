@@ -27,7 +27,7 @@ const Items = ({ setItems, items, headline }) => {
                 {/* <tr className='headlineRow'><td colSpan='5' className='text-center'>מוצרי חלב</td></tr> */}
                 <tr>
                     <th>#</th>
-                    <th>פריט</th>
+                    <th className='text-right'>פריט</th>
                     <th>כמות</th>
                     <th>הערות</th>
                     <th>האם להזמין</th>
