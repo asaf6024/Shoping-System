@@ -20,6 +20,6 @@ input {
 }
 @media only screen and (max-width: 600px) {
   table input.form-control {
-    font-size: x-small !important;
+    font-size: xx-small !important;
   }
 }
