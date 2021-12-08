@@ -1,38 +1,46 @@
-.App {
-  text-align: center;
+body {
+  direction: rtl;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ul.react-tabs__tab-list {
+  text-align: center !important;
+}
+.saveButton {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+}
+.sendButton {
+  position: fixed !important;
+  top: 50;
+  left: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media only screen and (max-width: 600px) {
+  .container {
+    margin-top: 80px;
+    padding: 0 !important;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .container h4 {
+    font-size: medium !important;
   }
-  to {
-    transform: rotate(360deg);
+  .container .react-tabs__tab {
+    font-size: small !important;
+  }
+  .buttonDiv {
+    width: 100%;
+    height: 60px;
+    background: black;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+  }
+  .buttonDiv .saveButton,
+  .buttonDiv .sendButton {
+    color: white;
+    background-color: blue;
+  }
+  .buttonDiv .saveButton {
+    right: 0 !important;
   }
 }

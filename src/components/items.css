@@ -1,0 +1,25 @@
+table tr {
+  border: 1px solid black;
+}
+table .headlineRow {
+  background: black;
+}
+table .headlineRow td {
+  color: white;
+}
+table h5 {
+  cursor: pointer;
+}
+table h4 {
+  font-size: x-large;
+}
+td,
+th,
+input {
+  text-align: center !important;
+}
+@media only screen and (max-width: 600px) {
+  table input.form-control {
+    font-size: x-small !important;
+  }
+}
