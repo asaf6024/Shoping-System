@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import ReactWhatsapp from 'react-whatsapp';
+import MyModal from '../Modal/MyModal';
 
-const SendMessage = ({ sendReservation, reservation }) => {
+const SendMessage = ({ saveReservation, reservation }) => {
 
     const [message, setMessage] = useState('')
-    const [message2, setMessage2] = useState('')
+    const [modalShow, setModalShow] = useState(false)
     useEffect(() => {
 
         console.log('reservation', reservation)
@@ -26,12 +27,43 @@ const SendMessage = ({ sendReservation, reservation }) => {
 
     return (
         <div className='buttonDiv'>
-            <button className='btn saveButton' onClick={(e) => sendReservation(e)}>
+            <button className='btn saveButton' onClick={(e) => {
+                saveReservation(e)
+                setModalShow(true)
+            }}>
                 <i className="fas fa-save"></i>&nbsp;שמירה
             </button>
-            <ReactWhatsapp number="972502820405" message={message} className='btn sendButton'>
+            {/* <ReactWhatsapp number="972502820405" message={message} className='btn sendButton'>
                 <i className="fas fa-paper-plane"></i>&nbsp;שליחה
-            </ReactWhatsapp>
+            </ReactWhatsapp> */}
+
+            {/* <MyModal
+                headlineText={'התראה!'}
+                headlineBody={notificationsState}
+                show={modalShow}
+                onHide={() => setModalShow(false)}
+                ButtonDeleteText=''
+                ButtonText='סגירה'
+                onHide={() => seNotifcationNotActive()}
+            /> */}
+            {/* <MyModal /> */}
+
+            {/* <MyModal
+                modalShow={modalShow}
+                ButtonText='שליחה'
+                onHide={setModalShow(false)}
+                ButtonCloseText='סגירה'
+            /> */}
+            <MyModal
+                headlineText={'בדיקה'}
+                show={modalShow}
+                onHide={() => setModalShow(false)}
+                ButtonText='ביטול'
+                ButtonCloseText={'שליחה'}
+                message={message}
+            // ButtonDinamicFunction={() => actionAndUpdate()}
+            />
+
 
 
         </div>

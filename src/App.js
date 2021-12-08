@@ -45,7 +45,7 @@ function App() {
 
   }, [])
 
-  const sendReservation = (e) => {
+  const saveReservation = (e) => {
     e.preventDefault();
     setReservation([
       fridge,
@@ -66,7 +66,6 @@ function App() {
       frozen,
       clean
     ]))
-
   }
 
   return (
@@ -76,7 +75,7 @@ function App() {
           <MDBCol sm='12'>
             <h1 className='text-center'>רשימת קניות</h1>
 
-            <SendMessage sendReservation={sendReservation} reservation={reservation} />
+            <SendMessage saveReservation={saveReservation} reservation={reservation} />
 
             <Tabs>
               <TabList>
