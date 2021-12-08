@@ -19,6 +19,9 @@ function App() {
   const [clean, setClean] = useState([])
 
   const [reservation, setReservation] = useState([])
+  const [modalShow, setModalShow] = useState(false)
+
+
   useEffect(() => {
 
     // console.log('products', products)
@@ -66,6 +69,7 @@ function App() {
       frozen,
       clean
     ]))
+    setModalShow(true)
   }
 
   return (
@@ -75,7 +79,12 @@ function App() {
           <MDBCol sm='12'>
             <h1 className='text-center'>רשימת קניות</h1>
 
-            <SendMessage saveReservation={saveReservation} reservation={reservation} />
+            <SendMessage
+              saveReservation={saveReservation}
+              reservation={reservation}
+              setModalShow={setModalShow}
+              modalShow={modalShow}
+            />
 
             <Tabs>
               <TabList>
