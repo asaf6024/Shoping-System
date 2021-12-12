@@ -1,15 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { MDBTable, MDBTableBody, MDBTableHead } from 'mdbreact';
 import './items.css'
-import Add from './Add/Add';
+
+import Add from '../Add/Add';
 
 const Items = ({ setItems, items, headline }) => {
-
     const [displayAdd, setDisplayAdd] = useState(false)
-
-    useEffect(() => {
-        console.log('items', items)
-    }, [])
 
     const changeValue = (id, isActive, variable, value) => {
 
@@ -24,7 +20,6 @@ const Items = ({ setItems, items, headline }) => {
     return (
         <MDBTable>
             <MDBTableHead color="primary-color" textWhite>
-                {/* <tr className='headlineRow'><td colSpan='5' className='text-center'>מוצרי חלב</td></tr> */}
                 <tr>
                     <th>#</th>
                     <th className='text-right'>פריט</th>
@@ -35,7 +30,6 @@ const Items = ({ setItems, items, headline }) => {
             </MDBTableHead>
             <MDBTableBody>
                 {
-                    // products.map(product => {
                     items != undefined && items.map((c, index) => {
                         return <tr key={c.id}>
                             <td>{index + 1}</td>
@@ -59,8 +53,6 @@ const Items = ({ setItems, items, headline }) => {
 
                     })
 
-                    // })
-
                 }
                 {
                     displayAdd &&
@@ -80,9 +72,7 @@ const Items = ({ setItems, items, headline }) => {
 
                         </h5>
                     </td>
-
                 </tr>
-
 
             </MDBTableBody>
         </MDBTable >

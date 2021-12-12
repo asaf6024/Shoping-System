@@ -2,11 +2,11 @@ import { MDBCard } from 'mdbreact'
 import React, { useState, useEffect } from 'react'
 
 export const Add = ({ number, setDisplayAdd, items, setItems }) => {
-
     const [id, setId] = useState('')
     const [name, setName] = useState('')
     const [amount, setAmount] = useState(1)
     const [comment, setComment] = useState('')
+
     useEffect(() => {
         setId(number + 1)
     }, [])

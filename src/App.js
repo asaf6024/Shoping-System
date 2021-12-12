@@ -1,13 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { MDBCol, MDBContainer, MDBRow } from 'mdbreact';
-import './App.css';
-import Items from './components/Items';
-
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import 'react-tabs/style/react-tabs.css'
-import { useEffect } from 'react';
+
+//obj
 import products from './dist/products'
+
+//components
 import SendMessage from './components/SendMessage/SendMessage';
+import Items from './components/Items/Items';
+
+//css
+import './App.css';
+import 'react-tabs/style/react-tabs.css'
 
 function App() {
 
@@ -17,10 +21,8 @@ function App() {
   const [candies, setCandies] = useState([])
   const [frozen, setFrozen] = useState([])
   const [clean, setClean] = useState([])
-
   const [reservation, setReservation] = useState([])
   const [modalShow, setModalShow] = useState(false)
-
 
   useEffect(() => {
 
@@ -44,7 +46,6 @@ function App() {
       setFrozen(products.frozen)
       setClean(products.clean)
     }
-
 
   }, [])
 
@@ -105,6 +106,7 @@ function App() {
                 />
 
               </TabPanel>
+
               <TabPanel>
                 <h2 className='text-center'>מוצרים למטבח</h2>
                 <Items
@@ -113,6 +115,7 @@ function App() {
                   items={kitchen}
                 />
               </TabPanel>
+
               <TabPanel>
                 <h2 className='text-center'>ירקות</h2>
                 <Items
@@ -121,6 +124,7 @@ function App() {
                   items={vegetables}
                 />
               </TabPanel>
+
               <TabPanel>
                 <h2 className='text-center'>ממתקים</h2>
                 <Items
@@ -129,6 +133,7 @@ function App() {
                   items={candies}
                 />
               </TabPanel>
+
               <TabPanel>
                 <h2 className='text-center'>קפואים</h2>
                 <Items
@@ -137,6 +142,7 @@ function App() {
                   items={frozen}
                 />
               </TabPanel>
+
               <TabPanel>
                 <h2 className='text-center'>חומרי ניקוי ורחצה</h2>
                 <Items
@@ -145,6 +151,7 @@ function App() {
                   items={clean}
                 />
               </TabPanel>
+
             </Tabs>
           </MDBCol>
         </MDBRow>
