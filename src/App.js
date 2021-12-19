@@ -146,7 +146,7 @@ function App() {
               <TabPanel>
                 <h2 className='text-center'>חומרי ניקוי ורחצה</h2>
                 <Items
-                  headline={'מוצר'}
+                  headline={'מוצר נקיון ורחצה'}
                   setItems={setClean}
                   items={clean}
                 />
