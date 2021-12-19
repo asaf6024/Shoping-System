@@ -91,7 +91,7 @@ function App() {
               <TabList>
                 <Tab>מוצרי חלב וקירור</Tab>
                 <Tab>מוצרים למטבח</Tab>
-                <Tab>ירקות</Tab>
+                <Tab>ירקות ופירות</Tab>
                 <Tab>ממתקים</Tab>
                 <Tab>קפואים</Tab>
                 <Tab>חומרי ניקוי ורחצה</Tab>
@@ -100,7 +100,7 @@ function App() {
               <TabPanel>
                 <h2 className='text-center'> מוצרי חלב וקירור</h2>
                 <Items
-                  headline={'מוצר חלב'}
+                  headline={'מוצר חלב וקירור'}
                   setItems={setFridge}
                   items={fridge}
                 />
@@ -117,9 +117,9 @@ function App() {
               </TabPanel>
 
               <TabPanel>
-                <h2 className='text-center'>ירקות</h2>
+                <h2 className='text-center'>ירקות ופירות</h2>
                 <Items
-                  headline={'ירק'}
+                  headline={'ירקות ופירות'}
                   setItems={setVegetables}
                   items={vegetables}
                 />

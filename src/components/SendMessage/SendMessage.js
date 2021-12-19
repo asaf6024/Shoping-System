@@ -35,7 +35,7 @@ const SendMessage = ({ saveReservation, reservation, setModalShow, modalShow }) 
                 headlineText={'בדיקה'}
                 show={modalShow}
                 onHide={() => setModalShow(false)}
-                ButtonText='ביטול'
+                ButtonText='סגירה'
                 ButtonCloseText={'שליחה'}
                 message={message}
             />

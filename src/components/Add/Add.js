@@ -38,7 +38,7 @@ export const Add = ({ number, setDisplayAdd, items, setItems }) => {
                     className='form-control'
                     required
                     value={name}
-                    placeholder='מוצר'
+                    placeholder='הקלידו שם מוצר...'
                     onChange={(e) => setName(e.target.value)}
                 />
             </td>
