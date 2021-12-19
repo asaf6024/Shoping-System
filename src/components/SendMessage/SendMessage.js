@@ -6,10 +6,13 @@ const SendMessage = ({ saveReservation, reservation, setModalShow, modalShow }) 
     const [message, setMessage] = useState('')
     useEffect(() => {
 
-        console.log('reservation', reservation)
+        // console.log('reservation', reservation)
+
         if (reservation.length > 1) {
 
-            setMessage(`*הזמנה*\n       
+            const currentDate = new Date().toLocaleDateString('he-IL', { timeZone: 'Asia/Jerusalem' }).replace(/\D/g, '/')
+
+            setMessage(`*הזמנה ${currentDate}*\n       
              ${reservation[0].filter(r => r.isActive ? r : '').map((r, i) => `${i == 0 ? `*מוצרי חלב*\n` : ''} ${r.name} - ${r.amount} ${r.comment != '' ? `| ${r.comment}` : ''}\n`).join('')} 
              ${reservation[1].filter(r => r.isActive ? r : '').map((r, i) => `${i == 0 ? `*מוצרים למטבח*\n` : ''} ${r.name} - ${r.amount} ${r.comment != '' ? `| ${r.comment}` : ''}\n`).join('')} 
              ${reservation[2].filter(r => r.isActive ? r : '').map((r, i) => `${i == 0 ? `*ירקות*\n` : ''} ${r.name} - ${r.amount} ${r.comment != '' ? `| ${r.comment}` : ''}\n`).join('')} 
