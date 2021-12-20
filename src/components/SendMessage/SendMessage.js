@@ -18,7 +18,7 @@ const SendMessage = ({ saveReservation, reservation, setModalShow, modalShow }) 
              ${reservation[2].filter(r => r.isActive ? r : '').map((r, i) => `${i == 0 ? `*ירקות*\n` : ''} ${r.name} - ${r.amount} ${r.comment != '' ? `| ${r.comment}` : ''}\n`).join('')} 
              ${reservation[3].filter(r => r.isActive ? r : '').map((r, i) => `${i == 0 ? `*ממתקים*\n` : ''} ${r.name} - ${r.amount} ${r.comment != '' ? `| ${r.comment}` : ''}\n`).join('')} 
              ${reservation[4].filter(r => r.isActive ? r : '').map((r, i) => `${i == 0 ? `*קפואים*\n` : ''} ${r.name} - ${r.amount} ${r.comment != '' ? `| ${r.comment}` : ''}\n`).join('')} 
-             ${reservation[5].filter(r => r.isActive ? r : '').map((r, i) => `${i == 0 ? `*חומרי ניקוי ורחצה*\n` : ''} ${r.name} - ${r.amount} ${r.comment != '' ? `| ${r.comment}` : ''}\n`).join('')}                     
+             ${reservation[5].filter(r => r.isActive ? r : '').map((r, i) => `${i == 0 ? `*חומרי ניקוי ורחצה*\n` : ''} ${r.name} - ${r.amount} ${r.comment != '' ? `| ${r.comment}` : ''}`).join('')}                     
              `
             )
 
