@@ -100,7 +100,7 @@ productsFromStorage != null ? products = productsFromStorage
             {
                 id: 3,
                 name: 'חבילות כוסות לשתיה חמה',
-                amount: 4,
+                amount: 3,
                 comment: '',
                 isActive: true
             },
@@ -120,81 +120,173 @@ productsFromStorage != null ? products = productsFromStorage
             },
             {
                 id: 6,
-                name: 'פתיתים',
-                amount: 2,
-                comment: '',
-                isActive: true
-            },
-            {
-                id: 7,
-                name: 'בצק עלים',
-                amount: 20,
-                comment: '',
-                isActive: true
-            },
-            {
-                id: 8,
-                name: 'שמיר',
-                amount: 2,
-                comment: '',
-                isActive: true
-            },
-            {
-                id: 9,
-                name: 'פטרוזיליה',
-                amount: 2,
-                comment: '',
-                isActive: true
-            },
-            {
-                id: 10,
                 name: 'אורז',
                 amount: 1,
                 comment: '',
                 isActive: true
             },
             {
+                id: 7,
+                name: 'שמן קנולה',
+                amount: 1,
+                comment: '',
+                isActive: true
+            },
+            {
+                id: 8,
+                name: 'שמן זית',
+                amount: 1,
+                comment: '',
+                isActive: true
+            },
+            {
+                id: 9,
+                name: 'פתיתים',
+                amount: 2,
+                comment: '',
+                isActive: true
+            },
+            {
+                id: 10,
+                name: 'פסטה בצורות',
+                amount: 1,
+                comment: '',
+                isActive: true
+            },
+            {
                 id: 11,
-                name: 'תרכיז עגבניות',
+                name: 'ספגטי',
                 amount: 1,
                 comment: '',
                 isActive: true
             },
             {
                 id: 12,
-                name: 'קופסת תירס',
-                amount: 2,
+                name: 'בצק עלים',
+                amount: 1,
                 comment: '',
                 isActive: true
             },
             {
                 id: 13,
-                name: 'מלפפון חמוץ ',
-                amount: 1,
-                comment: '',
-                isActive: true
-            },
-            {
-                id: 14,
-                name: 'קופסת פטריות',
-                amount: 1,
-                comment: '',
-                isActive: true
-            },
-            {
-                id: 15,
                 name: 'מיצים',
                 amount: 6,
                 comment: '',
                 isActive: true
             },
             {
-                id: 16,
+                id: 14,
                 name: 'סודה',
                 amount: 1,
                 comment: '',
                 isActive: true
             },
+            {
+                id: 15,
+                name: 'קפה שחור',
+                amount: 4,
+                comment: '',
+                isActive: true
+            },
+            {
+                id: 16,
+                name: 'נס קפה',
+                amount: 4,
+                comment: '',
+                isActive: true
+            },
+            {
+                id: 17,
+                name: 'תה',
+                amount: 4,
+                comment: '',
+                isActive: true
+            },
+            {
+                id: 18,
+                name: 'תרכיז עגבניות',
+                amount: 1,
+                comment: '',
+                isActive: true
+            },
+            {
+                id: 19,
+                name: 'קופסת תירס',
+                amount: 2,
+                comment: '',
+                isActive: true
+            },
+            {
+                id: 20,
+                name: 'מלפפון חמוץ ',
+                amount: 1,
+                comment: '',
+                isActive: true
+            },
+            {
+                id: 21,
+                name: 'טונה',
+                amount: 1,
+                comment: '',
+                isActive: true
+            },
+            {
+                id: 22,
+                name: 'קופסת פטריות',
+                amount: 1,
+                comment: '',
+                isActive: true
+            },
+            {
+                id: 23,
+                name: 'פפריקה מתוקה',
+                amount: 1,
+                comment: '',
+                isActive: true
+            },
+            {
+                id: 24,
+                name: 'פלפל שחור',
+                amount: 1,
+                comment: '',
+                isActive: true
+            },
+            {
+                id: 25,
+                name: 'כורכום',
+                amount: 1,
+                comment: '',
+                isActive: true
+            },
+            {
+                id: 26,
+                name: 'כמון',
+                amount: 1,
+                comment: '',
+                isActive: true
+            },
+            {
+                id: 27,
+                name: 'שמיר',
+                amount: 2,
+                comment: '',
+                isActive: true
+            },
+            {
+                id: 28,
+                name: 'פטרוזיליה',
+                amount: 2,
+                comment: '',
+                isActive: true
+            },
+            {
+                id: 29,
+                name: 'נענע',
+                amount: 1,
+                comment: '',
+                isActive: true
+            },
+
         ],
         vegetables: [
             {
@@ -206,28 +298,28 @@ productsFromStorage != null ? products = productsFromStorage
             },
             {
                 id: 2,
-                name: 'נענע',
+                name: 'בצל',
                 amount: 1,
                 comment: '',
                 isActive: true
             },
             {
                 id: 3,
-                name: 'שק לימונים',
+                name: 'בטטות',
                 amount: 1,
                 comment: '',
                 isActive: true
             },
             {
                 id: 4,
-                name: 'שום',
+                name: 'שק לימונים',
                 amount: 1,
                 comment: '',
                 isActive: true
             },
             {
                 id: 5,
-                name: 'בצל',
+                name: 'שום',
                 amount: 1,
                 comment: '',
                 isActive: true
@@ -245,7 +337,7 @@ productsFromStorage != null ? products = productsFromStorage
                 amount: 1,
                 comment: '',
                 isActive: true
-            },
+            }
         ],
 
         candies: [
@@ -287,6 +379,20 @@ productsFromStorage != null ? products = productsFromStorage
                 comment: '',
                 isActive: true
             },
+            {
+                id: 4,
+                name: 'אפונה קפואה',
+                amount: 1,
+                comment: '',
+                isActive: true
+            },
+            {
+                id: 5,
+                name: 'גזר גמדי קפוא',
+                amount: 1,
+                comment: '',
+                isActive: true
+            },
         ],
 
         clean: [
@@ -307,21 +413,28 @@ productsFromStorage != null ? products = productsFromStorage
             {
                 id: 3,
                 name: 'שמפו',
-                amount: 6,
+                amount: 1,
                 comment: '',
                 isActive: true
             },
             {
                 id: 4,
                 name: 'משחת שיניים',
-                amount: 6,
+                amount: 1,
                 comment: '',
                 isActive: true
             },
             {
                 id: 5,
                 name: 'נייר טואלט',
-                amount: 6,
+                amount: 1,
+                comment: '',
+                isActive: true
+            },
+            {
+                id: 6,
+                name: 'סמרטוטים',
+                amount: 1,
                 comment: '',
                 isActive: true
             },

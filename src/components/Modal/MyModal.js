@@ -24,7 +24,7 @@ function MyModal(props) {
             </Modal.Body>
 
             <Modal.Footer className='text-center' style={{ margin: 'auto' }}>
-                <ReactWhatsapp number="972502820405" message={props.message} className='btn success'>
+                <ReactWhatsapp number="972502820402" message={props.message} className='btn success'>
                     <i className="fas fa-paper-plane fa-2x"></i>&nbsp;שליחה
                 </ReactWhatsapp>
                 {props.ButtonText !== '' ?

@@ -15,7 +15,10 @@ ul.react-tabs__tab-list {
   top: 50;
   left: 0;
 }
-
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  opacity: 1 !important;
+}
 @media only screen and (max-width: 600px) {
   .container {
     margin-top: 80px;
